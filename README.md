@@ -14,3 +14,4 @@ In the world of software management there exists a dreaded place called ***depen
 
 ### References
 1. https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli#install-terraform
+2. https://www.gitpod.io/docs/configure/workspaces/tasks#execution-order
