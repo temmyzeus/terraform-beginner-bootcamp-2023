@@ -23,3 +23,5 @@ Also the terraform installation command was saved to a bash [file](./bin/install
 ```bash
 chmod u+7 <file-name>
 ```
+
+Exampe Environment variable [file](.env.example) was added to show sample of environment variables needed to be added when setting up the environment.
