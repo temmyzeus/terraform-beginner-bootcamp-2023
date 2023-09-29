@@ -19,5 +19,5 @@ fi
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o ${target_zip_file}
 unzip -q ${target_zip_file}
 sudo ./${extract_folder}/install --update
-cd $PROJECT_ROOT
+cd $THEIA_WORKSPACE_ROOT
 aws sts get-caller-identity
