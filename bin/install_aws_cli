@@ -1,0 +1,23 @@
+#!/bin/sh
+cd /workspace
+echo 'My current working directory:' `pwd`
+target_zip_file='awscliv2.zip'
+extract_folder='aws'
+
+# delete file if exists
+if [ -e "$target_zip_file" ]; then
+    rm "$target_zip_file"
+    echo "File removed: $target_zip_file"
+fi
+
+# delete folder if exists
+if [ -d "$extract_folder" ]; then
+    rm -rf "$extract_folder"
+    echo "Folder removed: $extract_folder"
+fi
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o ${target_zip_file}
+unzip -q ${target_zip_file}
+sudo ./${extract_folder}/install --update
+cd $PROJECT_ROOT
+aws sts get-caller-identity
