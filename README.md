@@ -25,3 +25,23 @@ chmod u+7 <file-name>
 ```
 
 Exampe Environment variable [file](.env.example) was added to show sample of environment variables needed to be added when setting up the environment.
+
+###  Terraform Cloud
+1. Login to Terraform using `terraform login`. \
+This bring us a WYSIWYG (What you see is what you get) prompt which helps to login to terraform cloud via the browser.
+2. An API Token is generated which is stored in local location `~/.terraform.d/credentials.tfrc/json` in the json format
+
+```json
+{
+  "credentials": {
+    // The key is the hostname which can be changed in case of a local deployment of terraform
+    "app.terraform.io": {
+      "token": "<GENERATED TOKEN>"
+    }
+  }
+}
+```
+3. Run `terraform plan` & `terrafotm apply` to deploy your resources.
+
+Note: Terraform pushes files in the instantiated directory to remote and runs the `plan` or `apply` remotely. This means variables stored in our local enviroment or in local files outside of the terraform init / apply directory will not be found by terraform .
+To tackle this, we used Terraform cloud variables which also has an environment variable options. This variables has `TF_VAR` prepended to them to be picked up by terraform.
