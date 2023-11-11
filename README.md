@@ -1,5 +1,6 @@
 # Journal - Terraform Beginner Bootcamp 2023
 
+![Architectural Diagram](./assets/architecture.png)
 
 [Terraform Beginner Bootcamp 2023](https://app.exampro.co/student/journey/terraform-cpb)
 
