@@ -1,5 +1,14 @@
 # Terraform Beginner Bootcamp 2023 - Week 0
 
+- [Semantic Versioning 2.0.0!!!](#semantic-versioning-200---)
+- [Summary](#summary)
+  * [Introduction](#introduction)
+  * [Changes](#changes)
+  * [Terraform Cloud](#terraform-cloud)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 
 ## Semantic Versioning 2.0.0!!!
 ## Summary
