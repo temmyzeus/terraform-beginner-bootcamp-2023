@@ -9,14 +9,6 @@ terraform {
       version = "5.19.0"
     }
   }
-
-  cloud {
-    organization = "My-Terraform-Bootcamp"
-
-    workspaces {
-      name = "terra-house-1"
-    }
-  }
 }
 
 provider "random" {
